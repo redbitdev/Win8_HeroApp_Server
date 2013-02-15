@@ -1,0 +1,42 @@
+
+<table class="table table-striped table-bordered bootstrap-datatable datatable dataTable" >
+	<thead>
+		<tr>
+			<th >
+				<div class="btn-group pull-right">
+					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+						<span >CSV</span><span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu" id='download-csv'>
+						<li><a data-type='all' data-tablename="{{tableName}}" href="#">All</a></li>
+						<li><a data-type='visible' data-tablename="{{tableName}}" href="#">Visible</a></li>
+						<li><a data-type='selected' data-tablename="{{tableName}}" href="#">Selected</a></li>
+					</ul>
+					
+				</div>
+			</th>
+		</tr>
+		<tr id='table-header' role="row" data-tablename="{{tableName}}">
+			<th></th>
+			<th class="sorting" role="columnheader">Title</th>
+			<th class="sorting" role="columnheader">Description</th>
+			<th class="sorting" role="columnheader">Category</th>
+			<th class="sorting" role="columnheader">Status</th>
+			<th class="sorting" role="columnheader">Submitted Date</th>
+			<th class="sorting" role="columnheader">Is Hidden</th>
+			
+		</tr>
+	</thead>
+	<tbody role="alert" aria-live="polite" aria-relevant="all" id='table-body'>
+			
+	</tbody>
+</table>
+<div class="btn-group pull-right">
+	{{#user.isAdmin}}
+		<a class="btn" id='btnShow' href="#">Show</a>
+		<a class="btn" id='btnHide' href="#">Hide</a>
+		<a class="btn" id='btnDismiss' href="#">Dismiss</a>
+		<!--<a class="btn" id='btnUpdate' href="#">Update Status</a>
+		<a class="btn" id='btnComment' href="#">Comment</a>-->
+	{{/user.isAdmin}}
+</div>

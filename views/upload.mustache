@@ -1,0 +1,44 @@
+
+<div class="row-fluid sortable">
+	<div class="box span12">
+		<div class="box-header well" data-original-title>
+			<h2><i class="icon-edit"></i> Upload JSON File</h2>
+			
+		</div>
+		<div class="box-content">
+			<form class="form-horizontal" method="post" enctype="multipart/form-data">
+			  <fieldset>
+				<legend>Upload your JSON data here to add it to the system and make it available to your Finder Windows 8 application</legend>
+				
+				
+				<div class="control-group">
+					<label class="control-label" for="datasetName">Dataset Name</label>
+					<div class="controls">
+					  <input class="input-xlarge focused" id="datasetName" name="datasetName" type="text" value="">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="pathToItems">Path to items</label>
+					<div class="controls">
+					  <input class="input-xlarge focused" id="pathToItems" name="pathToItems" type="text" value="d">
+					  <span class="help-inline">Comma seperated list of elements in the path to the data</span>
+					</div>
+				</div>
+				<div class="control-group">
+				  <label class="control-label" for="fileInput">JSON file</label>
+				  <div class="controls">
+					<input class="input-file uniform_on" id="fileInput" name="fileInput" type="file">
+				  </div>
+				</div>          
+				
+				<div class="form-actions">
+				  <button type="submit" class="btn btn-primary">Upload</button>
+				  <button type="reset" class="btn">Cancel</button>
+				</div>
+			  </fieldset>
+			</form>   
+
+		</div>
+	</div><!--/span-->
+
+	</div><!--/row-->

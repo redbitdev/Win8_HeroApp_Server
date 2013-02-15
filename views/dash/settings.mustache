@@ -1,0 +1,56 @@
+<div class="row-fluid sortable ui-sortable">	
+				<div class="box span12">
+					<div class="box-header well" data-original-title="">
+						<h2><i class="icon-plus"></i> Server Settings</h2>
+					</div>
+					<div class="box-content">
+						<form method="POST">
+						<table class="table table-bordered table-striped">
+							<tbody>
+								<tr>
+									<td><h3>Allow Anon Issues</h3></td>
+									<td>
+										<input data-no-uniform="true" name="allowAnonIssues" id="allowAnonIssues" 
+											{{#settings.allowAnonIssues}}
+											checked="checked" 
+											{{/settings.allowAnonIssues}}
+											type="checkbox">
+									</td>
+								</tr>
+								<tr>
+									<td><h3>Allow Anon Comments</h3></td>
+									<td>
+										<input data-no-uniform="true" name="allowAnonCommenting" id="allowAnonCommenting" 
+											{{#settings.allowAnonCommenting}}
+											checked="checked" 
+											{{/settings.allowAnonCommenting}}
+											type="checkbox">
+									</td>
+								</tr>
+								<tr>
+									<td><h3>Auto Approve Issues</h3></td>
+									<td>
+										<input data-no-uniform="true" name="autoApproveIssues" id="autoApproveIssues" 
+											{{#settings.autoApproveIssues}}
+											checked="checked" 
+											{{/settings.autoApproveIssues}}
+											type="checkbox">
+									</td>
+								</tr>
+								<tr>
+									<td><h3>Auto Approve Comments</h3></td>
+									<td>
+										<input data-no-uniform="true" name="autoApproveComments" id="autoApproveComments" 
+											{{#settings.autoApproveComments}}
+											checked="checked" 
+											{{/settings.autoApproveComments}}
+											type="checkbox">
+									</td>
+								</tr>
+								<tr><td colspan="2"><input type="submit" value="Submit Changes" /></td></tr>
+							</tbody>
+						</table>
+					</div>	
+				</div><!--/span-->
+				
+			</div>
