@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 // get your free mongodb at www.mongolab.com
-var path = 'mongodb://YOUR-MONGO-DB-CONNECTION-STRING';
+var path = 'mongodb://heroapp:heroapp@ds045087.mongolab.com:45087/heroappG';
 module.exports = {
 	_db: null,
 	init: function() {

@@ -3,13 +3,13 @@ var passport = require('passport'),
 	WindowsLiveStrategy = require('passport-windowslive').Strategy;
 
 // get key at dev.live.com
-var WINDOWS_LIVE_CLIENT_ID = "YOUR-KEY-HERE"
-var WINDOWS_LIVE_CLIENT_SECRET = "YOUR-KEY-HERE-AGe2T";
+var WINDOWS_LIVE_CLIENT_ID = "00000000440F023B"
+var WINDOWS_LIVE_CLIENT_SECRET = "sKteZ5eC2WEo79XRNt4SBnIEwWfOAblB";
 
 var strategy = new WindowsLiveStrategy({
 	clientID: WINDOWS_LIVE_CLIENT_ID,
 	clientSecret: WINDOWS_LIVE_CLIENT_SECRET,
-	callbackURL: "http://YOUR-AZURE-WEBSITE-NAME.azurewebsites.net/auth/windowslive/callback"
+	callbackURL: "http://heroapp.azurewebsites.net/auth/windowslive/callback"
 }, function(accessToken, refreshToken, profile, done) {
 	// asynchronous verification, for effect...
 	process.nextTick(function() {
